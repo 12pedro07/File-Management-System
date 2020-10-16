@@ -136,7 +136,7 @@ Dentro do script, utilizamos técnicas aprendidas em aula, como loops (para varr
 
 # Entrega 4
 
-A principal manipulação do sistema de arquivos foi realizada dentro do script de instalação, verificando a existencia, criando, removendo e aninhando pastas umas dentro de outras.
+O gerenciamento de memória no projeto foi realizado através da linguagem C, com os comandos malloc para requisitar ao sistema operacional um espaço determinado de memória ram e free para liberar a memoria alocada e não causar vazamento de memoria.
 
 
 # Entrega 5
