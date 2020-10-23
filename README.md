@@ -138,6 +138,32 @@ Dentro do script, utilizamos técnicas aprendidas em aula, como loops (para varr
 
 O gerenciamento de memória no projeto foi realizado através da linguagem C, com os comandos malloc para requisitar ao sistema operacional um espaço determinado de memória ram e free para liberar a memoria alocada e não causar vazamento de memoria.
 
+### Perguntas:
+
+__1)__ O software desenvolvido funcionará local ou remotamente?
+
+R: O software funcionará localmente, visto que seu objetivo é gerenciar os arquivos de usuário apenas.
+
+
+__2)__ A leitura das variáveis referentes ao ambiente operacional será feita via input do usuário ou o próprio software fará esta entrada dos dados?
+
+R: A leitura das variáveis do ambiênte operacional será feita inteiramente via o suftware, por meio de scripts shell e código em linguagem C. O usuário será responsável apenas pela interação com a interface.
+
+
+__3)__ Há atualizações (hardware e software) necessárias que devem ser feitas e monitoradas para que o projeto desenvolvido funcione?
+
+R: Os requisitos para o projeto desenvolvido são:
+
+	1) Sistema operacional linux;
+	2) Possuir compilador gcc instalado;
+	3) Possuir python3 instalado;
+
+Não se faz necessário nenhum monitoramento durante o uso do software. Também não se faz necessário qualquer hardware especifico para o correto funcionamento do projeto desenvolvido.
+
+__4)__ Há licenças de software que devem ser consideradas?
+
+R: Não há nenhuma licença necessária a ser considerada. O projeto foi totalmente desenvolvido pelos alunos.
+
 
 # Entrega 5
 
