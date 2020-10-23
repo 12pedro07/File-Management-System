@@ -161,3 +161,46 @@ Esse sistema de arquivos é mais conhecido por utilizar a estrutura de arquivos 
 
 A aplicação utilizará apenas uma única partição, no ambiente operacional Ubuntu, portanto, vai ficar tudo na mesma plataforma.
 
+### Perguntas
+
+__1)__ Como listar os sistemas de arquivos montados?
+
+R: mount -t ext4
+
+Obs: - ext4 é um sistema de arquivos utilizado pelo Linux a partir de 2008
+
+
+__2)__ Quais são os passos para montar um sistema de arquivos no linux? Faça uso de um ou mais sistemas de arquivos à sua escolha. Sugere-se que o sistema de arquivo escolhido suporte o projeto que desenvolve.
+
+R: 1º Definir o diretório onde será o ponto de montagem `sudo mount /dev/sda7 /mnt/media`
+
+- O linux já declara o tipo de sistema de arquivos automatico.
+
+2º Quando o sistema de arquivos não é reconhecido, adicionar o parâmetro -t no mount.
+
+* Não utilizaremos o comando mount, para a montagem de um sistema de arquivos, pois não achamos necessário montar uma partição, utilizaremos o UFS do linux.
+
+O linux utiliza Ext4, um sistema de arqivos que, segundo a [documentação oficial da distribuição fedora](https://docs.fedoraproject.org/en-US/Fedora/14/html/Storage_Administration_Guide/newfilesys-ext4.html):
+
+_"Ext4 uses extents (as opposed to the traditional block mapping scheme used by ext2 and ext3), which improves performance when using large files and reduces metadata overhead for large files. In addition, ext4 also labels unallocated block groups and inode table sections accordingly, which allows them to be skipped during a file system check. This makes for quicker file system checks, which becomes more beneficial as the file system grows in size."_
+
+__Tradução livre:__ Ext4 utiliza extensões (contrariamente ao esquema de mapeamento de blocks tradicional ustilizado pelo ext2 e ext3), o que melhora a performance quando utilizando arquivos grandes e reduz o _overhead_ de metadados para estes arquivos. Além disto, o ext4 também rotula blocos desalocados e seções de tabela "inode" correspondentes, o que permite a eles serem pulados durante a verificação de arquivos do sistema. Acelerando estas verificações, o que se torna mais benéfico a medida que o tamanho do sistema de arquivos cresce.
+
+__3)__ Como desmontar um sistema de arquivo?
+
+1º Abra o shell
+
+2º Vá no diretório onde é o ponto de montagem 
+
+3º Digite o comando abaixo
+
+`umount /dev/sda4`
+
+
+__4)__ Uma vez que o mount foram feitos, ele é perdido a cada reinicialização do equipamento?
+Não, pois iremos utilizar o agendador de tarefas.
+
+__5)__ Como tornar permanente as montagens de device que vcs criam?
+ crontab - agendador de tarefas
+A gente utiliza o agendador de tarefas, através do comando crontab no terminal. Para montar os sistemas de arquivos no dia e hora, especificado, tornando persistente a montagem.
+
