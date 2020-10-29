@@ -164,6 +164,15 @@ __4)__ Há licenças de software que devem ser consideradas?
 
 R: Não há nenhuma licença necessária a ser considerada. O projeto foi totalmente desenvolvido pelos alunos.
 
+### Conceitos:
+
+__1) Páginação:__
+
+A paginação é uma técnica utilizada para implementar a memória virtual, dividindo esta em páginas, que podem, ou não, estar mapeadas à memoria fisica. Cada um dos endereços de memória virtual páginados, será encaminhado para uma parte da cpu chamada MMU (memory management unit, ou, unidade de gerenciamento de memória), responsável por converter o endereço recebido para um endereço real, da memória RAM física. - [Fonte](http://diatinf.ifrn.edu.br/prof/lib/exe/fetch.php?media=user:1379492:sistemas_operacionais:8-memoria-virtual-paginacao.pdf)
+
+__2) Swap:__
+
+A memoria swap é uma parte do HD separada para auxiliar em caso de _overflow_ da memória RAM, ou seja, quando não existe espaço suficiente na memória para realizar as tarefas em execução, assim o sistema operacional utiliza esta parte do HD em forma de arquivo para compensar a falta de RAM. Este arquivo é dependente do sistema operacional, no windows temos no disco C:/ um arquivo oculto chamado pagefile.sys enquanto no linux no lugar de um arquivo, o swap é realizado em uma partição definida durante a instalação do sistema.
 
 # Entrega 5
 
