@@ -25,7 +25,7 @@ Para rodar o programa, realize os seguintes passos:
 
 ### Execução:
 
-Após instalado, você terá uma pasta na raiz do linux nomeada FMS, para rodar o programa execute o seguinte comando: `source FMS/obj/menu`
+Após instalado, você terá uma pasta na raiz do linux nomeada FMS, para rodar o programa execute o seguinte comando: `source ~/FMS/obj/menu`
 
 # Grupo
 
