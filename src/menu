@@ -1,0 +1,32 @@
+#!/bin/bash
+
+run_agenda()
+{
+  FMS/obj/agenda.out
+}
+
+do_backup()
+{
+  read -p 'Caminho da pasta que gostaria de fazer backup: ' path
+
+  echo "Dados para agendamento (use * para todos, , para selecionar mais de um dia ou hora e nada para pular)"
+  read -p 'Dia da semana (0-6): ' dow
+  read -p 'Dia do mes (1-31): ' dom
+  read -p 'Mes (1-12): ' m
+  read -p 'Hora (0-23): ' h
+  read -p 'Minutos (0-59): ' min
+
+  min h dom m dow /bin/bash /backup.sh | crontab # precisa terminar aqui ainda
+}
+
+echo Bem vindo! O que gostaria de fazer? $'\n'
+echo "(1)" Acessar agenda
+echo "(2)" Agendar backup $'\n'
+
+read -p 'Opção: ' option
+
+case $option in
+  1) run_agenda ;;
+  2) echo "opção 2 escolhida" ;;
+  *) echo "opção invalida";;
+esac
