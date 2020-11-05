@@ -5,6 +5,7 @@
 Sumário:
 ========
 
+- [Uso](#uso)
 - [Grupo](#grupo)
 - [Desenvolvimento](#desenvolvimento)
 - [Entrega 1](#entrega-1)
@@ -12,6 +13,19 @@ Sumário:
 - [Entrega 3](#entrega-3)
 - [Entrega 4](#entrega-4)
 - [Entrega 5](#entrega-5)
+
+# Uso
+Para rodar o programa, realize os seguintes passos:
+
+### Instalação:
+
+1) Abra um terminal (Ctrl+Alt+t)
+2) Clone o projeto: `cd && git clone https://github.com/12pedro07/File-Management-System`
+3) Execute o arquivo install: `chmod +x ./File-Management-System && source ./File-Management-System/install`
+
+### Execução:
+
+Após instalado, você terá uma pasta na raiz do linux nomeada FMS, para rodar o programa execute o seguinte comando: `source FMS/obj/menu`
 
 # Grupo
 
