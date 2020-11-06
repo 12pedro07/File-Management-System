@@ -21,7 +21,7 @@ Para rodar o programa, realize os seguintes passos:
 
 1) Abra um terminal (Ctrl+Alt+t)
 2) Clone o projeto: `cd && git clone https://github.com/12pedro07/File-Management-System`
-3) Execute o arquivo install: `chmod +x ./File-Management-System && source ./File-Management-System/install`
+3) Execute o arquivo install: ` cd ~/File-Management-System && chmod +x ./install && source ./install`
 
 ### Execução:
 
